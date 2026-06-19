@@ -1,0 +1,408 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Excellence Academy School</title>
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    line-height:1.6;
+    color:#333;
+}
+
+/* HEADER */
+header{
+    background:#0d47a1;
+    color:white;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffcc00;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.6),
+               rgba(0,0,0,.6)),
+               url('https://images.unsplash.com/photo-1509062522246-3755977927d7');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ffcc00;
+    color:#000;
+    padding:14px 30px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* SECTIONS */
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:#0d47a1;
+    font-size:38px;
+}
+
+/* ABOUT */
+.about{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.about img{
+    width:500px;
+    max-width:100%;
+    border-radius:10px;
+}
+
+.about-text{
+    flex:1;
+}
+
+/* PROGRAMS */
+.programs{
+    background:#f5f7fa;
+}
+
+.program-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.card h3{
+    color:#0d47a1;
+    margin-bottom:15px;
+}
+
+/* FEATURES */
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature{
+    background:#0d47a1;
+    color:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+}
+
+/* ADMISSION */
+.admission{
+    background:#e8f0fe;
+    text-align:center;
+}
+
+.admission p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+/* CONTACT */
+.contact{
+    background:#f9f9f9;
+}
+
+.contact-form{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact-form button{
+    background:#0d47a1;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.contact-form button:hover{
+    background:#08306b;
+}
+
+/* FOOTER */
+footer{
+    background:#0b1f3a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero-content h1{
+    font-size:35px;
+}
+
+.about{
+    flex-direction:column;
+}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Excellence Academy</div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#admission">Admissions</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Shaping Future Leaders</h1>
+        <p>Providing Quality Education, Innovation and Excellence.</p>
+        <a href="#admission" class="btn">Apply Now</a>
+    </div>
+</section>
+
+<section id="about">
+    <div class="section-title">
+        <h2>About Our School</h2>
+    </div>
+
+    <div class="about">
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1" alt="School">
+
+        <div class="about-text">
+            <p>
+                Excellence Academy is dedicated to academic achievement,
+                character development and innovation. We provide a supportive
+                learning environment that empowers students to become
+                responsible global citizens.
+            </p>
+
+            <br>
+
+            <p>
+                Our mission is to nurture creativity, leadership, critical
+                thinking and lifelong learning among all students.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="programs" class="programs">
+
+    <div class="section-title">
+        <h2>Academic Programs</h2>
+    </div>
+
+    <div class="program-grid">
+
+        <div class="card">
+            <h3>Primary Education</h3>
+            <p>Strong academic foundation with modern teaching methods.</p>
+        </div>
+
+        <div class="card">
+            <h3>Secondary Education</h3>
+            <p>Comprehensive curriculum focused on excellence.</p>
+        </div>
+
+        <div class="card">
+            <h3>ICT Program</h3>
+            <p>Preparing students for the digital future.</p>
+        </div>
+
+        <div class="card">
+            <h3>Science Program</h3>
+            <p>Hands-on laboratory and research experiences.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="section-title">
+        <h2>Why Choose Us?</h2>
+    </div>
+
+    <div class="features-grid">
+
+        <div class="feature">
+            <h3>Qualified Teachers</h3>
+            <p>Highly experienced and certified educators.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Modern Facilities</h3>
+            <p>Smart classrooms, libraries and laboratories.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Sports & Arts</h3>
+            <p>Balanced education through extracurricular activities.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Excellent Results</h3>
+            <p>Consistently high academic performance.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="admission" class="admission">
+
+    <div class="section-title">
+        <h2>Admissions Open</h2>
+    </div>
+
+    <p>
+        Applications are now open for the upcoming academic year.
+        Join a community committed to excellence, innovation and success.
+    </p>
+
+    <a href="#contact" class="btn">Request Information</a>
+
+</section>
+
+<section id="contact" class="contact">
+
+    <div class="section-title">
+        <h2>Contact Us</h2>
+    </div>
+
+    <form class="contact-form">
+
+        <input type="text" placeholder="Full Name">
+
+        <input type="email" placeholder="Email Address">
+
+        <input type="text" placeholder="Phone Number">
+
+        <textarea rows="6" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</section>
+
+<footer>
+    <p>
+        © 2026 Excellence Academy School. All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>
+```
